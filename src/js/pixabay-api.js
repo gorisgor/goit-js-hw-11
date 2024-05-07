@@ -8,7 +8,7 @@ const URL = "https://pixabay.com/api/";
 function fetchImages() {
     const searchParams = new URLSearchParams({
         key: API_KEY,
-        q: request.value,
+        q: userRequest,
         image_type: "photo",
         orientation: "horizontal",
         safesearch: true,
@@ -31,17 +31,17 @@ function fetchImages() {
         });
 }
 
-request.addEventListener("input", onRequest);
 let userRequest = ""; 
-
-function onRequest(event) {
-    event.preventDefault();
-    userRequest = request.value;
-}
 
 button.addEventListener("click", onSubmit);
 
 function onSubmit(event) {
     event.preventDefault();
-    fetchImages();
+    if (!request.value.trim()) { 
+      alert("Please, type a request");
+  }  else {
+      userRequest = request.value;
+      fetchImages();
+  }
+    
 }
