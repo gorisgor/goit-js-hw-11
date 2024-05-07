@@ -27,7 +27,7 @@ function fetchImages() {
             console.log(data);
         })
         .catch(error => {
-            console.error("Error fetching images:", error);
+            console.log(error);
         });
 }
 
