@@ -19,4 +19,10 @@ export const fetch = fetch(`${URL}${searchParams}`).then(response => {
       );
     }
     return response.json();
-  });
+  })
+  .then(data => {
+    console.log(data);
+})
+.catch(error => {
+    console.error("Error fetching images:", error);
+});;
