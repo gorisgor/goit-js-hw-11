@@ -6,19 +6,24 @@
     <title>HW11</title>
     
     <script type="module" crossorigin src="/goit-js-hw-11/commonHelpers.js"></script>
-    <link rel="stylesheet" href="/goit-js-hw-11/assets/index-a3cc486e.css">
+    <link rel="modulepreload" crossorigin href="/goit-js-hw-11/assets/vendor-8501dee5.js">
+    <link rel="stylesheet" href="/goit-js-hw-11/assets/vendor-a088063d.css">
+    <link rel="stylesheet" href="/goit-js-hw-11/assets/index-5215202a.css">
   </head>
   <body>
-   <div class="container">
+    <div class="container">
       <form class="form">
-        <input class="query" type="text" name="query" placeholder="Search images..."/>
+        <input
+          class="query"
+          type="text"
+          name="query"
+          placeholder="Search images..."
+        />
         <button class="submit-btn" type="submit" data-submit>Search</button>
+        <span class="loader centr-position is-hidden"></span>
       </form>
-      
-      <span class="loader position is-hidden"></span>
-      <ul class="gallery">
-      </ul>
-   </div>
+      <ul class="gallery"></ul>
+    </div>
     
   </body>
 </html>
