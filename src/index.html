@@ -7,14 +7,16 @@
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
-    <div class="input-line">
-      <input class="request" type="text" id="text-request" placeholder="Search images..."/>
-      <button class="submit-btn" type="button" data-submit>Search</button>
-    </div>
-    
-    <span class="loader position is-hidden"></span>
-    <div class="card-container"></div>
-    <!-- <script type="module" src="./main.js"></script> -->
-    <script type="module" src="./js/pixabay-api.js"></script>
+   <div class="container">
+      <form class="form">
+        <input class="query" type="text" name="query" placeholder="Search images..."/>
+        <button class="submit-btn" type="submit" data-submit>Search</button>
+      </form>
+      
+      <span class="loader position is-hidden"></span>
+      <ul class="gallery">
+      </ul>
+   </div>
+    <script type="module" src="./main.js"></script>
   </body>
 </html>
