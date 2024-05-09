@@ -19,10 +19,10 @@ export function renderImageCards(data, galleryElement) {
           <img src="${webformatURL}" alt="${tags}">
         </a>
         <div class="card-body">
-          <p class="card-text">Likes: ${likes}</p>
-          <p class="card-text">Views: ${views}</p>
-          <p class="card-text">Comments: ${comments}</p>
-          <p class="card-text">Downloads: ${downloads}</p>
+          <p class="card-text">Likes ${likes}</p>
+          <p class="card-text">Views ${views}</p>
+          <p class="card-text">Comments ${comments}</p>
+          <p class="card-text">Downloads ${downloads}</p>
         </div>
       </li>`;
       })
