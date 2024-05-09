@@ -6,6 +6,7 @@
 */
 @import url('./reset.css');
 @import url('./hwstyles.css');
+@import url('./loader.css');
 
 :root {
   font-family: Inter, Avenir, Helvetica, Arial, sans-serif;
