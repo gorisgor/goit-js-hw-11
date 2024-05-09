@@ -19,17 +19,13 @@ function onSearch(event) {
     loader.classList.remove('is-hidden');
     fetchImages(userRequest)
       .then(data => renderImageCards(data, gallery))
-      .catch(onFetchError)
+      .catch(error => alert(error))
       .finally(() => {
         form.reset();
         loader.classList.add('is-hidden');
         initLightbox();
       });
   }
-}
-
-function onFetchError(error) {
-  alert(error);
 }
 
 function initLightbox() {

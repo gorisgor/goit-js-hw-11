@@ -17,7 +17,4 @@ export function fetchImages(userRequest) {
       }
       return response.json();
     })
-    .catch(error => {
-      throw error;
-    });
 }
