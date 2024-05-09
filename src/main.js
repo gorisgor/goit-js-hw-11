@@ -3,6 +3,8 @@ import { fetchImages } from './js/pixabay-api.js';
 import { renderImageCards } from './js/render-functions.js';
 import SimpleLightbox from 'simplelightbox';
 import 'simplelightbox/dist/simple-lightbox.min.css';
+import iziToast from 'izitoast';
+import "izitoast/dist/css/iziToast.min.css";
 
 const gallery = document.querySelector('.gallery');
 const searchForm = document.querySelector('.form');
@@ -19,7 +21,15 @@ function onSearch(event) {
     loader.classList.remove('is-hidden');
     fetchImages(userRequest)
       .then(data => renderImageCards(data, gallery))
-      .catch(error => alert(error))
+      .catch((error) => {
+        iziToast.show({
+          message:'Something went WRONG!', error,
+          messageColor: '#fff',
+          backgroundColor: '#b52222',
+          position: 'topRight',
+          progressBar: false,
+        });
+      } )
       .finally(() => {
         form.reset();
         loader.classList.add('is-hidden');
