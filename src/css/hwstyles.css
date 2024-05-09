@@ -63,10 +63,13 @@
 .simple-lightbox {
   background: rgba(46, 47, 66, 0.8);
 }
-.card-body {
+.card-body{
   display: flex;
-  padding-left: 20px;
-  padding-right: 25px;
   gap: 15px;
-  justify-content: center;
+}
+
+.card-text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
