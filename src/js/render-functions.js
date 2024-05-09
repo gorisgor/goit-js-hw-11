@@ -35,7 +35,7 @@ export function renderImageCards(data, galleryElement) {
       message:'Sorry, there are no images matching your search query. Please try again!',
       messageColor: '#fff',
       backgroundColor: '#b52222',
-      position: 'topCenter',
+      position: 'topRight',
       progressBar: false,
     });
   }
