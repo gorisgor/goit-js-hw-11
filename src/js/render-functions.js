@@ -31,8 +31,7 @@ export function renderImageCards(data, galleryElement) {
   } else {
     galleryElement.innerHTML = '';
     iziToast.show({
-      message:
-        'Sorry, there are no images matching your search query. Please try again!',
+      message:'Sorry, there are no images matching your search query. Please try again!',
       messageColor: '#fff',
       backgroundColor: '#b52222',
       position: 'topCenter',
