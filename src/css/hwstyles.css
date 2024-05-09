@@ -64,7 +64,7 @@
   background: rgba(46, 47, 66, 0.8);
 }
 .card {
-  border-right: 1px solid #808080;
+  border: 1px solid #808080;
 }
 .card-body{
   display: flex;
