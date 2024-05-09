@@ -3,10 +3,10 @@ import{i as f,S as m}from"./assets/vendor-8c59ed88.js";(function(){const r=docum
           <img src="${e}" alt="${i}">
         </a>
         <div class="card-body">
-          <p class="card-text">Likes: ${c}</p>
-          <p class="card-text">Views: ${l}</p>
-          <p class="card-text">Comments: ${u}</p>
-          <p class="card-text">Downloads: ${d}</p>
+          <p class="card-text">Likes ${c}</p>
+          <p class="card-text">Views ${l}</p>
+          <p class="card-text">Comments ${u}</p>
+          <p class="card-text">Downloads ${d}</p>
         </div>
       </li>`}).join("");r.innerHTML=s}else r.innerHTML="",f.show({message:"Sorry, there are no images matching your search query. Please try again!",messageColor:"#fff",backgroundColor:"#b52222",position:"topRight",progressBar:!1})}const L=document.querySelector(".gallery"),b=document.querySelector(".form"),n=document.querySelector(".loader");b.addEventListener("submit",w);function w(o){o.preventDefault();const r=o.currentTarget,s=r.elements.query.value;s.trim()!==""&&(n.classList.remove("is-hidden"),g(s).then(a=>y(a,L)).catch(a=>alert(a)).finally(()=>{r.reset(),n.classList.add("is-hidden"),v()}))}function v(){new m(".gallery a",{captionsData:"alt",captionsDelay:250,overlayOpacity:0}).refresh()}
 //# sourceMappingURL=commonHelpers.js.map
